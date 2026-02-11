@@ -1,0 +1,23 @@
+:root {
+    --primary-color:lightgreen;
+    --secondary-color: gray;
+    --default-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+header{
+    background-color:var(--primary-color);
+    color:var(--secondary-color);
+    border-color: var(--secondary-color);
+    box-shadow: var(--default-shadow);
+    text-align: center;
+    font-size: 4ch;
+    line-height: 4ch;
+    margin: 0;
+    padding-top:2px
+}
+
+button:active{
+    color:rgb(8,0,0)
+
+}

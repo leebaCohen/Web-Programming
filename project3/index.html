@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Growth Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="grey lighten-4">
+
+    <div class="container">
+    <header>
+        <h1>Investment Growth Calculator</h1>
+        <img src=investment-growth-svgrepo-com.svg width="25%" padding="400px">
+    </header>
+    <article>
+        <h2>Planning for Your Future: How Our Investment Calculator Works</h2>
+        <p>Thinking about retirement can feel overwhelming, but seeing the numbers in black and white makes it real. Our Investment Growth Calculator is a simple yet powerful tool designed to show you the potential of your money over time. By leveraging the power of compound interest, you can see how even small amounts today can turn into a significant nest egg by the time you’re ready to hang up your hat.</p>
+        <h2>How to Use the Calculator</h2>
+        <p>To get your personalized projection, simply fill out the three fields in the form:
+        <ol>
+        <li>Initial Investment: Tell us how much you have ready to invest today. This is your "seed money."</li>
+        <li>Annual Interest Rate: Enter the percentage you expect your investment to grow each year. While markets fluctuate, many users look at historical stock market returns (like the S&P 500) as a benchmark.</li>
+        <li>Year of Retirement: Pick the year you plan to retire. Our system will automatically calculate how many years of growth you have left until that date.</li>
+        </ol>
+        <h2>Understanding the Results</h2>
+        Once you hit "Calculate," our tool uses a standard financial formula to project your balance. It assumes your interest is "compounded" annually—meaning you earn interest on your interest, year after year.
+        The result isn't just a number; it’s a roadmap. Whether you're 25 or 55, this tool helps you answer the most important question: “Am I on track?”
+        <h2>Why These Numbers Matter</h2>
+        The Time Advantage: The further away your retirement year, the more time your money has to grow exponentially.
+        The Impact of Rates: Even a 1% or 2% difference in your annual interest rate can lead to thousands of dollars in difference over several decades.
+        Ready to see your future balance? Scroll down to the form and start crunching the numbers!</p>
+    </article>
+        <div class="row" style="margin-top: 50px;">
+            <div class="col s12 m8 offset-m2">
+                <div class="card-panel z-depth-3 white">
+                    <h4 class="center-align blue-text text-darken-2">Investment Calculator</h4>
+                    <p class="center-align grey-text">Project your wealth for retirement</p>
+                    
+                    <form id="investmentForm" class="row">
+                        <div class="input-field col s12 m6">
+                            <label for="Initial Investment">Initial Investment:</label><br>
+                            <input type="number" id="Investment" name="Initial Investment"><br>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <label for="Annual Interest Rate ">Annual Interest Rate :</label><br>
+                            <input type="number" id="Interest" name="Annual Interest Rate "><br>
+                        </div>
+                        <div class="input-field col s12">
+                            <label for="Year of Retirement">Year of Retirement:</label><br>
+                            <input type="number" id="Retirement" name="Year of Retirement"><br>
+                        </div>
+                        <div class="col s12 center-align" style="margin-top: 20px;">
+                            <button class="btn-large waves-effect waves-light blue darken-2" type="submit">Calculate Growth</button>
+                        </div>
+                    </form>
+
+                    <div id="resultBox" style="display: none; margin-top: 20px;">
+                        <h4>Results:</h4>
+                        <p id="resultText">The calculation will appear here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
